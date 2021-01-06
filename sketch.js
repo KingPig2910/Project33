@@ -68,7 +68,6 @@ function draw() {
   
   if ( gameState =="end") {
     
-    gameOver_Sound.play();
     textSize(90);
     text("GameOver", 150, 300);
   }
@@ -91,7 +90,6 @@ function draw() {
               {
                   score=score+500;      
                   particle=null;
-                  scoringSound.play();
 
                   if ( count>= 5) gameState ="end";                          
               }
